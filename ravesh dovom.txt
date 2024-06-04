@@ -1,0 +1,14 @@
+let name = 'ii';
+let myname = name.split("");
+
+let charctors = myname.map(function(item, index, array) {
+    if (array.indexOf(item) !== index) {
+        console.log('has duplicate');
+        return item; // اگر به هر دلیلی باید چیزی بازگردانده شود.
+    } else {
+        console.log('dont duplicate');
+        return item; // اگر به هر دلیلی باید چیزی بازگردانده شود.
+    }
+});
+
+console.log(charctors);
